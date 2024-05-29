@@ -1,22 +1,19 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from "typeorm";
 import { PgRegisterTeacher } from "./rl-register-teacher.entity";
 
-@Entity({ name: 'tbl_teacher' })
-export class PgTeacher {
+@Entity({name:'tbl_register'})
+export class PgRegister {
     @PrimaryGeneratedColumn()
-    id_teacher: number;
+    id_register: number;
 
     @Column()
-    nm_teacher: string;
+    nm_register: string;
 
     @Column()
-    address_teacher: string;
+    status_register: string;
 
     @Column()
-    day_teacher: string;
-
-    @Column()
-    vacancies: number
+    telephone_register: string;
 
     @OneToMany(() => PgRegisterTeacher, registerClient => registerClient.cd_teacher)
     registerTeacherTP: PgRegisterTeacher[]

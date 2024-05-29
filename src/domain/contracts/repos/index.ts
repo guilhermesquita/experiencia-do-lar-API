@@ -1,1 +1,1 @@
-export * from './load-user-all'
+export * from './load-teach-all'
