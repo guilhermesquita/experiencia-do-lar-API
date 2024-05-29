@@ -1,6 +1,5 @@
-import { LoadTeacherById } from "../contracts/repos";
-import { AddRegister } from "../contracts/repos/add-register";
-import { LoadRlByTeacherId } from "../contracts/repos/load-rl-by-teacher-id";
+import { AddRegister, LoadRlByTeacherId, LoadTeacherById } from "../contracts/repos"
+
 
 export class DbAddRegister implements AddRegister {
     constructor(
