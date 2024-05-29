@@ -1,0 +1,1 @@
+export * from './load-teacher-all-factory'
